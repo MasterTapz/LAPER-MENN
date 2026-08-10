@@ -41,8 +41,6 @@ Graf kedekatan dibangun pada radius 1,5× jarak tanam, lalu STGNN (difusi tetang
 pohon asimptomatik mana yang akan bergejala dalam *h* sensus ke depan. Keluarannya **daftar pohon
 berperingkat risiko**, langsung dipakai memprioritaskan tindakan.
 
-![Arsitektur pipeline](docs/figures/fig_pipeline.png)
-
 **Jembatan antar-lapisan.** Kedua lapisan diuji pada sumber data berbeda, jadi yang diukur adalah
 kecocokan bentuknya — derajat rata-rata graf pada radius tanam yang sama:
 **5,54 ± 0,12** (dari prediksi detektor Lapisan 1) vs **5,74** (Eg9PP, Lapisan 2) — **selisih 3,5%**.
