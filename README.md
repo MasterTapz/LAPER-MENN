@@ -8,8 +8,8 @@ Tim **LAPER MENN** — Rajendra Rifqi Baskara, Muhammad Brian Subekti, Muhammad 
 
 | Tautan | |
 |---|---|
-| Bobot model (Hugging Face) | `https://huggingface.co/qibas/oil-palm-detection-weights` |
-| Dataset (Hugging Face) | `https://huggingface.co/datasets/qibas/oil-palm-detection-data` |
+| Bobot model (Hugging Face) | `https://huggingface.co/Tapziy/oil-palm-detection-weights` |
+| Dataset (Hugging Face) | `https://huggingface.co/datasets/Tapziy/oil-palm-detection-data` |
 | Repositori riset (jejak eksperimen lengkap) | `https://github.com/qibas/oil-palm-detection-datathon-2026` |
 
 ---

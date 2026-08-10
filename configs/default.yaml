@@ -5,14 +5,14 @@
 huggingface:
   # ------------------------------------------------------------------ NAMESPACE
   # These two ids are the ONLY place the Hugging Face account name appears.
-  # If your HF *username* is not `qibas`, change it in these two lines and
-  # nowhere else. (HF namespaces are usernames, not email addresses — check
-  # yours at https://huggingface.co/settings/profile.)
+  # Account: `Tapziy`. If that ever changes, edit these two lines and nowhere
+  # else. (Note: the GitHub account is a DIFFERENT name, `qibas` — the two are
+  # not interchangeable.)
   #
   # Until the repos exist, everything still works offline via:
   #   python scripts/download_assets.py --from-local ../oil-palm-detection-model-data --full
-  model_repo: "qibas/oil-palm-detection-weights"
-  dataset_repo: "qibas/oil-palm-detection-data"
+  model_repo: "Tapziy/oil-palm-detection-weights"
+  dataset_repo: "Tapziy/oil-palm-detection-data"
 
 paths:
   # Override with env var SAWITGUARD_DATA_ROOT instead of editing this file —
