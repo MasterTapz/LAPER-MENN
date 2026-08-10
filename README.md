@@ -51,8 +51,8 @@ Butuh **Python ≥ 3.10**. Demo berjalan **di CPU** dan **tanpa internet** (Reac
 GPU hanya diperlukan untuk melatih ulang Lapisan 1.
 
 ```bash
-git clone https://github.com/MasterTapz/SawitGuard-GNN.git
-cd SawitGuard-GNN
+git clone https://github.com/MasterTapz/LAPER-MENN.git
+cd LAPER-MENN
 pip install -r requirements.txt -r requirements-dev.txt
 pip install -e .
 ```
