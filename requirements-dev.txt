@@ -1,0 +1,7 @@
+# Development / verification dependencies — not required to run the demo,
+# only to run the test suite and to fetch weights/data from Hugging Face.
+#
+#   pip install -r requirements.txt -r requirements-dev.txt
+
+pytest==8.3.4
+huggingface_hub==0.27.1

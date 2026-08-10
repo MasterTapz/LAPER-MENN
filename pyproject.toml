@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oil-palm-detection"
+version = "1.0.0"
+description = "SawitGuard-GNN — oil palm crown detection + BSR spread risk ranking (Datathon 2026, RISTEK Fasilkom UI)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+# Kept in requirements.txt / requirements-dev.txt as the source of truth for pinned
+# versions (see the notes in requirements.txt about numpy<2 and CUDA 12.6-not-13.0).
+# This section exists only so `pip install -e .` puts `oil_palm` on the path.
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

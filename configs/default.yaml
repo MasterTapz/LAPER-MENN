@@ -1,0 +1,24 @@
+# Default configuration for SawitGuard-GNN scripts. Values here are the
+# defaults baked into scripts/*.py; override via the env vars noted below
+# (see src/oil_palm/config.py for how DATA_ROOT resolves).
+
+huggingface:
+  # ------------------------------------------------------------------ NAMESPACE
+  # These two ids are the ONLY place the Hugging Face account name appears.
+  # If your HF *username* is not `qibas`, change it in these two lines and
+  # nowhere else. (HF namespaces are usernames, not email addresses — check
+  # yours at https://huggingface.co/settings/profile.)
+  #
+  # Until the repos exist, everything still works offline via:
+  #   python scripts/download_assets.py --from-local ../oil-palm-detection-model-data --full
+  model_repo: "qibas/oil-palm-detection-weights"
+  dataset_repo: "qibas/oil-palm-detection-data"
+
+paths:
+  # Override with env var SAWITGUARD_DATA_ROOT instead of editing this file —
+  # see src/oil_palm/config.py.
+  data_root: "data_clean"
+
+demo:
+  host: "127.0.0.1"
+  port: 8000

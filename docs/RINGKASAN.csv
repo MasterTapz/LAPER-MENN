@@ -1,0 +1,99 @@
+lapisan,eksperimen,item,mean,std,n,sign,vonis,catatan
+L1 UAV,demonstrator,F1 pusat tajuk (METRIK UTAMA),0.960,0.024,3.0,,,"YOLOv12n, 3 ortho x 30 epoch; conf 0,75 dipilih silang-lipatan"
+L1 UAV,demonstrator,presisi pusat tajuk,0.950,0.019,3.0,,,"pohon unik; radius cocok 0,5 x jarak tanam"
+L1 UAV,demonstrator,recall pusat tajuk,0.971,0.030,3.0,,,
+L1 UAV,demonstrator,RMSE pusat (x jarak tanam),0.071,0.011,3.0,,,F1 datar terhadap radius -> pusat memang tepat
+L1 UAV,demonstrator,mAP50,0.687,0.071,3.0,,,"metrik SEKUNDER, berlangit-langit: kotak GT = cap ukuran tetap"
+L1 UAV,demonstrator,mAP50-95,0.425,0.078,3.0,,,idem; lihat layer1_build/LABEL_QUALITY_AUDIT.md
+L1 UAV,demonstrator,PR-AUC kesehatan,0.182,0.059,3.0,,,block-CV 3 ortho; acak=0.013
+L1 UAV,demonstrator,ROC-AUC kesehatan,0.861,,3.0,,,
+L1 UAV,demonstrator,PR-AUC is_unbalance,0.181,0.091,3.0,,,d=0.001 -> DITOLAK
+L2 Eg9PP,ablasi fitur h=1,"AP(+2hop) - AP(v1), view=true",-0.00228,0.00686,40.0,16/40,INCONCLUSIVE,20 seed x 2 lipatan | varian +2hop
+L2 Eg9PP,ablasi fitur h=1,"AP(+umur) - AP(v1), view=true",-0.0043,0.00637,40.0,8/40,INCONCLUSIVE,20 seed x 2 lipatan | varian +umur
+L2 Eg9PP,ablasi fitur h=2,"AP(+2hop) - AP(v1), view=true",-0.00705,0.00746,40.0,8/40,INCONCLUSIVE,20 seed x 2 lipatan | varian +2hop
+L2 Eg9PP,ablasi fitur h=2,"AP(+umur) - AP(v1), view=true",-0.00703,0.00867,40.0,6/40,INCONCLUSIVE,20 seed x 2 lipatan | varian +umur
+L2 Eg9PP,ablasi fitur h=3,"AP(+2hop) - AP(v1), view=true",-0.00864,0.00864,40.0,4/40,NEG,20 seed x 2 lipatan | varian +2hop
+L2 Eg9PP,ablasi fitur h=3,"AP(+umur) - AP(v1), view=true",-0.00802,0.01024,40.0,6/40,INCONCLUSIVE,20 seed x 2 lipatan | varian +umur
+L2 Eg9PP,ablasi fitur h=4,"AP(+2hop) - AP(v1), view=true",-0.00985,0.00792,40.0,3/40,NEG,20 seed x 2 lipatan | varian +2hop
+L2 Eg9PP,ablasi fitur h=4,"AP(+umur) - AP(v1), view=true",-0.00791,0.00855,40.0,5/40,INCONCLUSIVE,20 seed x 2 lipatan | varian +umur
+L2 Eg9PP,dekomposisi+tangga h=1,STRUKTUR vs local r<=3  (paling ketat),0.00346,0.00327,40.0,35/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=1,STRUKTUR vs local r<=6,0.00452,0.00347,40.0,36/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=1,STRUKTUR vs random GLOBAL,0.0044,0.00464,40.0,30/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=1,prevalensi (random-nograph),0.00255,0.00349,40.0,32/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=1,temporal (nograph-MLP),0.00442,0.00555,40.0,34/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=1,total STGNN-MLP,0.01136,0.00687,40.0,38/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=2,STRUKTUR vs local r<=3  (paling ketat),0.0076,0.00472,40.0,38/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=2,STRUKTUR vs local r<=6,0.0097,0.00531,40.0,38/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=2,STRUKTUR vs random GLOBAL,0.00978,0.006,40.0,37/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=2,prevalensi (random-nograph),0.00295,0.00446,40.0,33/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=2,temporal (nograph-MLP),0.00337,0.00743,40.0,27/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=2,total STGNN-MLP,0.0161,0.01013,40.0,37/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=3,STRUKTUR vs local r<=3  (paling ketat),0.0128,0.00843,40.0,36/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=3,STRUKTUR vs local r<=6,0.01458,0.00743,40.0,40/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=3,STRUKTUR vs random GLOBAL,0.01512,0.00811,40.0,39/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=3,prevalensi (random-nograph),0.00209,0.00786,40.0,25/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=3,temporal (nograph-MLP),0.00206,0.00918,40.0,21/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=3,total STGNN-MLP,0.01927,0.01302,40.0,36/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=4,STRUKTUR vs local r<=3  (paling ketat),0.01393,0.00935,40.0,39/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=4,STRUKTUR vs local r<=6,0.01539,0.00922,40.0,40/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=4,STRUKTUR vs random GLOBAL,0.01653,0.00973,40.0,39/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=4,prevalensi (random-nograph),0.0018,0.00696,40.0,26/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=4,temporal (nograph-MLP),0.00115,0.00901,40.0,19/40,INCONCLUSIVE,20 seed x 2 lipatan
+L2 Eg9PP,dekomposisi+tangga h=4,total STGNN-MLP,0.01949,0.01284,40.0,35/40,POS,20 seed x 2 lipatan
+L2 Eg9PP,kepala SI(D) h=1,SI(D) head (SID-true),-0.0115,0.0072,8.0,0/8,NEG,TIDAK dapat dibandingkan dengan SEIR mana pun
+L2 Eg9PP,kepala SI(D) h=2,SI(D) head (SID-true),-0.023,0.0088,8.0,0/8,NEG,TIDAK dapat dibandingkan dengan SEIR mana pun
+L2 Eg9PP,kepala SI(D) h=3,SI(D) head (SID-true),-0.0293,0.0186,40.0,4/40,NEG,TIDAK dapat dibandingkan dengan SEIR mana pun
+L2 Eg9PP,kepala SI(D) h=4,SI(D) head (SID-true),-0.0426,0.0145,8.0,0/8,NEG,TIDAK dapat dibandingkan dengan SEIR mana pun
+L2 Eg9PP,null permutasi h=1,RR,5.1666,,500.0,0/500,,null 4.13+/-0.24; kelebihan 1.25x; z=+4.4
+L2 Eg9PP,null permutasi h=1,RR_MH,1.6324,,500.0,0/500,,null 1.13+/-0.11; kelebihan 1.45x; z=+4.6
+L2 Eg9PP,null permutasi h=2,RR,4.7382,,500.0,0/500,,null 3.73+/-0.21; kelebihan 1.27x; z=+4.8
+L2 Eg9PP,null permutasi h=2,RR_MH,1.6346,,500.0,0/500,,null 1.12+/-0.10; kelebihan 1.46x; z=+5.1
+L2 Eg9PP,null permutasi h=3,RR,4.4685,,500.0,0/500,,null 3.46+/-0.19; kelebihan 1.29x; z=+5.3
+L2 Eg9PP,null permutasi h=3,RR_MH,1.6462,,500.0,0/500,,null 1.11+/-0.10; kelebihan 1.48x; z=+5.6
+L2 Eg9PP,null permutasi h=4,RR,4.0627,,500.0,0/500,,null 3.14+/-0.17; kelebihan 1.29x; z=+5.5
+L2 Eg9PP,null permutasi h=4,RR_MH,1.6287,,500.0,0/500,,null 1.11+/-0.09; kelebihan 1.47x; z=+5.7
+jembatan,uji lebar sepur,derajat @1.5x L1 (prediksi detektor),5.54,0.12,3.0,,,"YOLOv12n 3 ortho, pohon dalam; conf dipilih silang-lipatan"
+jembatan,uji lebar sepur,derajat @1.5x L1 (kotak GT),5.62,0.05,3.0,,,"pembanding; biaya memakai detektor = 1,4%"
+jembatan,uji lebar sepur,derajat @1.5x L2,5.74,,,,,"selisih 3,5% thd prediksi; 5,74 DI LUAR pita +/-0,12"
+L2 Eg9PP,v3 foto-tunggal h=3,AP dalam-sensus penuh (24 kol W=3),0.0973,0.0107,40.0,,,"metrik adil untuk peringkat dalam satu bidikan"
+L2 Eg9PP,v3 foto-tunggal h=3,AP dalam-sensus foto tanpa graf,0.0632,0.0031,40.0,,,garis tanpa-skill; STATE konstan 0 di risk set
+L2 Eg9PP,v3 foto-tunggal h=3,AP dalam-sensus foto graf acak,0.0719,0.0064,40.0,,,
+L2 Eg9PP,v3 foto-tunggal h=3,AP dalam-sensus foto graf BENAR,0.1015,0.0079,40.0,,,"1,61x tanpa-skill; bandingkan RR Mantel-Haenszel 1,65x"
+L2 Eg9PP,v3 foto-tunggal h=3,"AP(foto graf benar) - AP(graf acak), dalam-sensus",0.0296,0.0057,40.0,40/40,POS,77% sinyal v3 dari PETA BENAR
+L2 Eg9PP,v3 foto-tunggal h=3,"AP(foto) - AP(penuh), dalam-sensus",0.0042,0.0035,40.0,36/40,POS,"harga kepraktisan NOL; margin 1,2 std -> klaim = tidak lebih lemah"
+L2 Eg9PP,v3 foto-tunggal h=3,"AP(foto) - AP(penuh), gabungan",-0.0558,0.0076,40.0,0/40,NEG,metrik gabungan menghargai tebak-tanggal; bukan tugas v3
+L2 Eg9PP,v3 null dalam-famili h=3,kelebihan vs null progeny,0.0268,0.0043,200.0,0/200,POS,z=+6.25; 200 permutasi
+L2 Eg9PP,v3 null dalam-famili h=3,kelebihan vs null progeny+parcel,0.0244,0.0040,200.0,0/200,POS,"z=+6.04; strata terketat; 64% spasial / 36% kekerabatan"
+L2 Eg9PP,v3 ujung-ke-ujung h=3,AP dalam-sensus masukan BERSIH (1 kolom),0.0916,0.0081,20.0,,,"lift 1,45x atas tanpa-skill 0.0632"
+L2 Eg9PP,v3 ujung-ke-ujung h=3,AP dalam-sensus masukan DETEKTOR,0.0800,0.0070,400.0,,,"lift 1,27x; 59% sinyal bertahan; recall 0.446 fpr 0.0094"
+L1 UAV,ambang kelas Unhealthy,F1 ambang dipilih silang-lipatan,0.370,0.052,3.0,,,DITOLAK - lebih buruk dari 0.75 apa adanya
+L1 UAV,ambang kelas Unhealthy,F1 ambang 0.75 apa adanya,0.406,0.058,3.0,,,dipertahankan; optimum per lipatan melompat 0.85/0.55/0.85 = derau
+L1 UAV,ambang kelas Unhealthy,recall detektor @0.75,0.446,,3.0,,,dipakai run_v3_noisy.py
+L1 UAV,ambang kelas Unhealthy,fpr detektor @0.75,0.0094,,3.0,,,idem
+L1 Peru,jalur bukti ketiga,PalmAnom AP50,0.9493,,1.0,,,"1 LIPATAN 1 SEED - TIDAK sebanding dgn ds_B yang 3 lipatan +/- std"
+L1 Peru,jalur bukti ketiga,PalmSan AP50,0.9497,,1.0,,,"1 LIPATAN 1 SEED - TIDAK sebanding dgn ds_B yang 3 lipatan +/- std"
+L1 Peru,jalur bukti ketiga,mAP50 gabungan,0.9495,,1.0,,,"YOLOv12n 30 epoch, fold0 seed42, 86 citra val"
+L1 Peru,jalur bukti ketiga,mAP50-95 gabungan,0.7032,,1.0,,,"1 LIPATAN 1 SEED - TIDAK sebanding dgn ds_B yang 3 lipatan +/- std"
+L1 Peru,jalur bukti ketiga,kontrol crown ROC-AUC,0.9524,,1.0,,,"tajuk saja; n_val=73"
+L1 Peru,jalur bukti ketiga,kontrol context ROC-AUC,0.9198,,1.0,,,"konteks saja"
+L1 Peru,jalur bukti ketiga,kontrol full ROC-AUC,0.8802,,1.0,,,"tajuk+konteks; LEBIH BURUK dari crown saja -> konteks tidak menambah"
+L1 Peru,jalur bukti ketiga,kontrol crown PR-AUC,0.9469,,1.0,,,""
+L1 Peru,jalur bukti ketiga,kontrol context PR-AUC,0.8607,,1.0,,,""
+L1 Peru,jalur bukti ketiga,kontrol full PR-AUC,0.8478,,1.0,,,""
+L1 Peru,jalur bukti ketiga,kotak diprediksi per citra,1.7209,,1.0,,,"GT 1.267 -> lebih-prediksi 36%; 28 dari 86 citra pred>GT"
+L2 Eg9PP,v3 ablasi kolom h=3,AP 1 kolom is_sympt,0.0916,0.0081,20.0,,,"lift 1,45x; 7 tingkat mungkin; yang detektor beri sekarang"
+L2 Eg9PP,v3 ablasi kolom h=3,AP 2 kolom + is_dead,0.0962,0.0081,20.0,,,"lift 1,52x; 23 tingkat; TARGET kalau detektor punya kelas mati"
+L2 Eg9PP,v3 ablasi kolom h=3,AP 3 kolom + is_cens,0.0999,0.0077,20.0,,,"lift 1,58x; 46 tingkat; is_cens mustahil dari foto"
+L2 Eg9PP,v3 ablasi kolom h=3,AP 6 kolom + selisih,0.1015,0.0081,20.0,,,"lift 1,61x; 161 tingkat; butuh dua kunjungan"
+L2 Eg9PP,v3 ablasi kolom h=3,NILAI KELAS MATI (2-1 kolom),0.0046,0.0004,20.0,20/20,POS,"11,5 std; merebut 47% jarak 1->6 kolom"
+L2 Eg9PP,v3 ablasi kolom h=3,+ penyensoran (3-2 kolom),0.0037,0.0008,20.0,20/20,POS,mustahil dari foto tunggal
+L2 Eg9PP,v3 ablasi kolom h=3,+ selisih antar waktu (6-3 kolom),0.0016,0.0007,20.0,20/20,POS,butuh kunjungan kedua
+L2 Eg9PP,agregasi blok h=3,Spearman blok model,0.179,0.003,20.0,20/20,POS,"1.558 unit blok-sensus; acak +0,004 -> metrik TIDAK terlalu mudah"
+L2 Eg9PP,agregasi blok h=3,Spearman blok acak (garis nol),0.004,0.020,20.0,,,garis acak pada metrik yang sama
+L2 Eg9PP,agregasi blok h=3,tangkapan top5 blok model,0.185,,20.0,19/20,POS,"lift 1,24x atas acak 14,9%"
+L2 Eg9PP,agregasi blok h=3,tangkapan top5 blok acak,0.149,,20.0,,,
+L2 Eg9PP,agregasi blok h=3,VONIS agregasi blok,-1.0,,20.0,,,"DITOLAK: lift blok 1,24x < lift pohon 1,61x; sinyal berskala pohon, agregasi mengencerkannya"
+L2 Eg9PP,kalibrasi v3 h=3,laju sakit pada sigmoid 0.50-0.60,0.236,,509.0,,,"dibaca 55% -> meleset -31 poin"
+L2 Eg9PP,kalibrasi v3 h=3,laju sakit pada sigmoid 0.40-0.50,0.136,,3467.0,,,"dibaca 45% -> meleset -31 poin"
+L2 Eg9PP,kalibrasi v3 h=3,laju sakit pada sigmoid 0.30-0.40,0.069,,12069.0,,,"dibaca 35% -> meleset -28 poin"
+L2 Eg9PP,kalibrasi v3 h=3,laju dasar sesungguhnya,0.047,,40828.0,,,"model TIDAK terkalibrasi; focal loss alfa 0,75"

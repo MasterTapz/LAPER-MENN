@@ -1,0 +1,49 @@
+# Weights and data are never committed — scripts/download_assets.py populates
+# these exact paths from the Hugging Face repos (or a local model-data checkout
+# via --from-local). See src/oil_palm/config.py for the paths these mirror.
+
+data_clean/*.csv
+data_clean/Eg9PP_Phenotypes.csv
+
+src/oil_palm/layer1/ds_B/
+src/oil_palm/layer1/yolo12/
+src/oil_palm/layer1/yolo12_runs/
+src/oil_palm/layer1/yolo12_results/
+src/oil_palm/layer1/anom_runs/
+src/oil_palm/layer1/anom_data/
+src/oil_palm/layer1/lightgbm_health/
+src/oil_palm/layer1/stage1_model.pkl
+src/oil_palm/layer1/stage1_summary.json
+src/oil_palm/layer1/*.pt
+src/oil_palm/layer1/out/
+src/oil_palm/layer1/runs/
+
+src/oil_palm/layer2/*.pt
+src/oil_palm/layer2/risk_ranked.csv
+src/oil_palm/layer2/risk_ranked.meta.json
+src/oil_palm/layer2/results_*.csv
+
+# Peru raw images (~66 MB). download_assets.py --full writes this exact folder
+# name next to the package (see PERU_DIR_NAME / anom.py), so it is a fetched
+# asset like everything above -- never a tracked one.
+src/oil_palm/Oil Palm Tree Detection 4.v15i.tensorflow/
+
+docs/figures/demo_preview/
+
+# --- standard Python / editor noise ---
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.vscode/
+.idea/
+*.cache
+.DS_Store
+
+# --- local venvs ---
+.venv/
+venv/
+env/
