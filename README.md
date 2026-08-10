@@ -1,6 +1,4 @@
-# Sistem
-
-**Identifikasi Pohon Sehat Berisiko Tertinggi: Integrasi Computer Vision dan Graph Neural Network untuk Prediksi Penyebaran Penyakit Kelapa Sawit **
+# **Identifikasi Pohon Sehat Berisiko Tertinggi: Integrasi Computer Vision dan Graph Neural Network untuk Prediksi Penyebaran Penyakit Kelapa Sawit **
 
 Tim **LAPER MENN** — Rajendra Rifqi Baskara, Muhammad Brian Subekti, Muhammad Dzikri Ilmansyah
 (Universitas Indonesia). Datathon 2026 RISTEK Fasilkom UI — *University Track*, babak Semifinal.
