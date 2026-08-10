@@ -8,9 +8,9 @@ Tim **LAPER MENN** — Rajendra Rifqi Baskara, Muhammad Brian Subekti, Muhammad 
 
 | Tautan | |
 |---|---|
+| Kode (GitHub) | `https://github.com/MasterTapz/SawitGuard-GNN` |
 | Bobot model (Hugging Face) | `https://huggingface.co/Tapziy/oil-palm-detection-weights` |
 | Dataset (Hugging Face) | `https://huggingface.co/datasets/Tapziy/oil-palm-detection-data` |
-| Repositori riset (jejak eksperimen lengkap) | `https://github.com/qibas/oil-palm-detection-datathon-2026` |
 
 ---
 
@@ -56,8 +56,8 @@ Butuh **Python ≥ 3.10**. Demo berjalan **di CPU** dan **tanpa internet** (Reac
 GPU hanya diperlukan untuk melatih ulang Lapisan 1.
 
 ```bash
-git clone https://github.com/qibas/sawitguard-gnn.git
-cd sawitguard-gnn
+git clone https://github.com/MasterTapz/SawitGuard-GNN.git
+cd SawitGuard-GNN
 pip install -r requirements.txt -r requirements-dev.txt
 pip install -e .
 ```

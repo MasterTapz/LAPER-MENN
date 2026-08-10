@@ -6,8 +6,8 @@ huggingface:
   # ------------------------------------------------------------------ NAMESPACE
   # These two ids are the ONLY place the Hugging Face account name appears.
   # Account: `Tapziy`. If that ever changes, edit these two lines and nowhere
-  # else. (Note: the GitHub account is a DIFFERENT name, `qibas` — the two are
-  # not interchangeable.)
+  # else. (Note: the GitHub account is a DIFFERENT name, `MasterTapz` — the two
+  # are not interchangeable.)
   #
   # Until the repos exist, everything still works offline via:
   #   python scripts/download_assets.py --from-local ../oil-palm-detection-model-data --full
