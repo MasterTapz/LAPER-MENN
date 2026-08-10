@@ -7,7 +7,7 @@ Tim **LAPER MENN** — Rajendra Rifqi Baskara, Muhammad Brian Subekti, Muhammad 
 
 | Tautan | |
 |---|---|
-| Kode (GitHub) | `https://github.com/MasterTapz/SawitGuard-GNN` |
+| Kode (GitHub) | `https://github.com/MasterTapz/LAPER-MENN` |
 | Bobot model (Hugging Face) | `https://huggingface.co/Tapziy/oil-palm-detection-weights` |
 | Dataset (Hugging Face) | `https://huggingface.co/datasets/Tapziy/oil-palm-detection-data` |
 
